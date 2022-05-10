@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{458E9020-71BB-4A0D-9F39-8BAD90731B91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sample_3_8</RootNamespace>
+    <AssemblyName>sample_3_8</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.1" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1" />
+    <Reference Include="DevExpress.Data.v21.1" />
+    <Reference Include="DevExpress.Images.v21.1" />
+    <Reference Include="DevExpress.Office.v21.1.Core" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core" />
+    <Reference Include="DevExpress.Utils.v21.1" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v21.1" />
+    <Reference Include="DevExpress.XtraEditors.v21.1" />
+    <Reference Include="DevExpress.Printing.v21.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v21.1" />
+    <Reference Include="DevExpress.XtraLayout.v21.1" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.1" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FluentMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FluentMainForm.Designer.cs">
+      <DependentUpon>FluentMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridUserControlWithRibbon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridUserControlWithRibbon.designer.cs">
+      <DependentUpon>GridUserControlWithRibbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridUserControl.designer.cs">
+      <DependentUpon>GridUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormWithRibbon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormWithRibbon.Designer.cs">
+      <DependentUpon>MainFormWithRibbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormWithTileNavPane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormWithTileNavPane.Designer.cs">
+      <DependentUpon>MainFormWithTileNavPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RichEditUserControlWithRibbon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RichEditUserControlWithRibbon.designer.cs">
+      <DependentUpon>RichEditUserControlWithRibbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichEditUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RichEditUserControl.designer.cs">
+      <DependentUpon>RichEditUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FluentMainForm.resx">
+      <DependentUpon>FluentMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridUserControlWithRibbon.resx">
+      <DependentUpon>GridUserControlWithRibbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridUserControl.resx">
+      <DependentUpon>GridUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormWithRibbon.resx">
+      <DependentUpon>MainFormWithRibbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormWithTileNavPane.resx">
+      <DependentUpon>MainFormWithTileNavPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RichEditUserControlWithRibbon.resx">
+      <DependentUpon>RichEditUserControlWithRibbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RichEditUserControl.resx">
+      <DependentUpon>RichEditUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
